@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body id="indexPage">
+		<div class="banner" id="Banner">
+			<img id="bannerImage" src="Images/banner.png" alt="Banner Image" style="width:100%">
+		</div>
+
+		<hr>
+
+		<div class="headline">
+			<a href="index.html" id="logo">
+				<img src="Images/logo.png">
+			</a>
+			<div id="topnav">
+				<a href="about.html">About</a>
+				<a href="request.html">Request</a>
+			  <a href="register.html">Register</a>
+				<a href="index.html">Home</a>
+			</div>
+		</div>
+
+		<div style="clear: both;"></div>
+
+		<hr>
+
+		<div class="container">
+			<img src="Images/beef-stew.jpg" alt="Food Image" style="width:100%">
+			<div class="centered">Try a new meal today!</div>
+		</div>
+
+		<h2>Find a driver near you!</h2>
+		<p>Type in your zipcode below and click Go! to find a driver near you</p>
+		<form name="zipForm" class="zipCheck" action="#" onsubmit="required()">
+			<input type="number" name="number1">
+			<input type="submit" name="submit" value="Go!">
+		</form><br><hr>
+
+		<script>
+			var isVisible = "visible";
+
+			function blink()
+			{
+		    // Toggle the position.
+		    if(isVisible == "visible") isVisible = "hidden";
+		    else                       isVisible = "visible";
+
+		    // Update it.
+		    document.getElementById("bannerImage").style.visibility=isVisible;
+
+		    // Repeat the process every 5 seconds.
+		    setTimeout(blink, 5000);
+			}
+
+			blink();
+
+			function required() {
+				var zipIn = document.forms["zipForm"]["number1"].value;
+				if (zipIn == "") {
+					alert("Please input a Value!");
+					return false;
+				}
+				else {
+					if (zipIn > 20000) {
+						alert("The city is out of service area!");
+					}
+					else {
+						alert("The city is within service area!");
+					}
+					return true;
+				}
+			}
+		</script>
+
+
+
+		<footer id="foot">
+			<table>
+				<tr>
+					<th rowspan="3" align="left">
+						<ul>
+							<li><a href="index.html">Home</a><br>
+							<li><a href="register.html">Register</a></li>
+							<li><a href="request.html">Reqeust Delivery</a><br>
+							<li><a href="about.html">About Foodar</a></li>
+						</ul>
+					</th>
+
+					<th rowspan="3" align="center">
+						<ul>
+							<li><a href="">Privacy Policy</a></li>
+							<li><a href="">Terms & Conditions</a></li>
+						</ul>
+					</th>
+
+					<th rowspan="3" align="right">
+						Lucky You:)<br><small>&copy; Copyright 2018, Foodar</small>
+					</th>
+				</tr>
+			</table>
+		</footer>
+
+	</body>
+</html>

@@ -1,0 +1,222 @@
+*{
+	font-family: monospace;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	border: 0;
+}
+
+body {
+	padding: 0 80px;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+a:visited {
+	color: blue;
+}
+
+a:hover {
+	color: cyan;
+}
+
+a:active {
+	color: yellow;
+}
+
+/******** Universal styles ********/
+.headline {
+	margin: 20px auto;
+}
+
+#logo img{
+  border: 0;
+	width: auto;
+}
+
+#topnav, #logo {
+	display: inline;
+}
+
+/* Style the links inside the navigation bar */
+#topnav a {
+  float: right;
+  text-align: center;
+	margin: 25px 13px;
+}
+
+#foot table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#foot table th {
+	padding: 2px;
+}
+
+#foot ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+#foot li {
+	margin: 5px 0;
+}
+/******** End of universal styles ********/
+
+
+
+
+/******** Style for about page ********/
+#aboutPage h1 {
+	text-align: center;
+	margin: 30px 0;
+}
+
+#aboutPage h2 {
+	margin-top: 45px;
+}
+/******** End of style for about page ********/
+
+
+
+/******** Style for index page ********/
+#indexPage .container {
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  padding-top: 16px;
+  padding-bottom: 10px;
+}
+
+#indexPage .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	font-weight: bold;
+	font-size: 45px;
+}
+
+#indexPage .zipCheck {
+	text-align: center;
+}
+/******** End of style for index page ********/
+
+
+
+/******** Style for request page ********/
+#requestPage .main {
+	padding: 0 20px;
+}
+
+#requestPage p {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+#requestPage .addressLabel, .restaurantLabel {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+#requestPage #Email {
+	margin-left: 4%;
+	margin-top: 2%;
+	width: 470px;
+}
+
+#requestPage #Restaurant {
+	margin-left: 4%;
+	margin-top: 2%;
+	width: 370px;
+}
+
+#requestPage #totalAmount, .requestButton {
+	text-align: center;
+}
+
+#requestPage .Row {
+	display: table;
+	width: 590px;
+	height: 105px;
+	table-layout: fixed;
+	border-spacing: 25px 0;
+}
+
+#requestPage .Column {
+	display: table-cell;
+	text-align: center;
+	border-style: solid;
+	table-layout: fixed;
+	position: relative;
+}
+
+#requestPage .Column label {
+	font-size: 0.9em;
+}
+
+#requestPage .Column input {
+	position: absolute;
+	bottom: 17px;
+	right: 72px;
+}
+/******** End of style for request page ********/
+
+
+
+/******** Style for register page ********/
+#registerPage fieldset {
+	display: inline-block;
+	box-sizing: border-box;
+	margin: 7px 10px;
+}
+
+#registerPage fieldset.set1 {
+	float: left;
+}
+
+#registerPage ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#registerPage label {
+	vertical-align: super;
+	display: inline-block;
+	clear: left;
+	float: left;
+	text-align: left;
+	width: 100px;
+}
+
+#registerPage input {
+	padding-top: 5px;
+	padding-right: 3px;
+	padding-bottom: 5px;
+	padding-left: 8px;
+	display: inline-block;
+	float: left;
+}
+
+#registerPage .reg p {
+	color: #FF0000;
+	font-size: 6pt;
+	padding-left: 101px;
+}
+
+#registerPage .regButton {
+	margin: 10px 8px;
+}
+/******** End of style for register page ********/
